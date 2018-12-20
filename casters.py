@@ -101,7 +101,18 @@ casters = {
     'thyron1': 'Thyron, Sword of Truth',
     'vyros2': 'Vyros, Incissar of the Dawnguard',
     ## Convergence of Cyriss
+    'aurora1': 'Aurora, the Numen of Aerogenesis',
+    'locke1': 'Aurum Lucanum Athanor Locke',
+    'axis1': 'Axis, the Harmonic Enforcer',
+    'orion1': 'Eminent Configurator Orion',
+    'lucant1': 'Father Lucant, the Divinity Architect',
+    'syntherion1': 'Forge Master Syntherion',
+    'directrix1': 'Iron Mother Directrix & Exponent Servitors',
     ## Crucible Guard
+    'syvestro1': 'Aurum Adeptus Syvestro',
+    'lukas1': 'Aurum Legate Lukas Di Morray',
+    'mackay1': 'Captain Eira Mackay',
+    'gearhart1': 'Marshal General Baldwin Gearhart & Mr. Clogg',
     ## Mercenaries
     ## Trollbloods
     ## Circle Orboros
