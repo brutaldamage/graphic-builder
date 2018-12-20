@@ -2,8 +2,8 @@ import click, datetime
 from casters import casters
 
 @click.command()
-@click.option('--date', '-d', help='The date of the match')
-@click.option('--time', '-t', help='The time that the match will be played at')
+@click.option('--date', '-d', help='The date of the match (x/x/xxxx)')
+@click.option('--time', '-t', help='The time that the match will be played at (x:xxPM)')
 @click.option('--casterone', '-c1', help='Caster of Player One')
 @click.option('--castertwo', '-c2', help='Caster of Player Two')
 

@@ -88,6 +88,18 @@ casters = {
     'coven1': 'The Witch Coven of Garlghast',
     'deneghra2': 'Wraith Witch Deneghra', 
     ## Retribution of Scyrah
+    'rahn1': 'Adeptis Rahn',
+    'vyros1': 'Dawnlord Vyros',
+    'elara2': 'Elara, Death\'s Shadow',
+    'garryth1': 'Garryth, the Blade of Retribution',
+    'issyria1': 'Issyria, Sibyl of Dawn',
+    'kaelyssa1': 'Kaelyssa, the Night\'s Whisper',
+    'ossyan1': 'Lord Arcanist Ossyan',
+    'goreshade4': 'Lord Ghyrrshyld, the Forgiven',
+    'helynna1': 'Magister Helynna',
+    'ravyn1': 'Ravyn, the Eternal Light',
+    'thyron1': 'Thyron, Sword of Truth',
+    'vyros2': 'Vyros, Incissar of the Dawnguard',
     ## Convergence of Cyriss
     ## Crucible Guard
     ## Mercenaries
