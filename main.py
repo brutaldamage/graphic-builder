@@ -1,4 +1,4 @@
-import click
+import click, datetime
 from casters import casters
 
 @click.command()
@@ -15,6 +15,8 @@ def setup(date, time, casterone, castertwo):
     # Validate input
     p1 = casters.get(casterone)
     p2 = casters.get(castertwo)
+    d = datetime.datetime.strptime(date, "%m/%d/%Y")
+    formattedMatchDate = d.strftime("%A") + ', ' + d.strftime('%b') + ' ' + d.strftime('%d')
 
     if (p1 and p2):
         print('\r')
@@ -22,7 +24,7 @@ def setup(date, time, casterone, castertwo):
         print('- Graphic Builder -')
         print('-------------------')
         print('\r')
-        print('Match will be on ' + date + ', starting at ' + time + ' CST')
+        print('Match will be on ' + formattedMatchDate + ' starting at ' + time + ' CST')
         print(p1 + ' vs ' + p2)
     else:
         print('You dun goofed. Type better!')
