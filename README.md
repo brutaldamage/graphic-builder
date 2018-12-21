@@ -3,7 +3,7 @@ A Python script that automates the creation of social images for Brutal Damage's
 
 # Prerequisites
 * Python 3.5
-* ImageMagick 7.0.8-17-Q16-x64 [Download](https://imagemagick.org/download/binaries/ImageMagick-7.0.8-17-Q16-x64-dll.exe)
+* ImageMagick 6.9.8-10-Q8 (x86 or x64 depending on if your Python version is x86 or x64) [Download](https://ftp.icm.edu.pl/packages/ImageMagick/binaries/ImageMagick-6.9.8-10-Q8-x86-dll.exe)
 * Wand 0.4.5 [Documentation](http://docs.wand-py.org/en/0.4.5/index.html)
 
 # Setup
