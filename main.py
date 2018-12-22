@@ -1,6 +1,8 @@
 import click, datetime, logging
 from casters import casters
 from wand.image import Image
+from wand.drawing import Drawing
+from wand.color import Color
 
 @click.command()
 @click.option('--date', '-d', help='The date of the match (x/x/xxxx)')
@@ -18,7 +20,7 @@ def setup(date, time, casterone, castertwo):
     p1 = casters.get(casterone)
     p2 = casters.get(castertwo)
     d = datetime.datetime.strptime(date, "%m/%d/%Y")
-    formattedMatchDate = d.strftime("%A") + ', ' + d.strftime('%b') + ' ' + d.strftime('%d')
+    formattedMatchDate = d.strftime("%a") + ', ' + d.strftime('%b') + ' ' + d.strftime('%d')
 
     if (p1 and p2):
         print('\r')
@@ -36,8 +38,18 @@ def setup(date, time, casterone, castertwo):
         # getCasterImage(casterone)
         # getCasterImage(castertwo)
     # Build image
-        #with Image(width=200, height=100) as img:
-            #img.save(filename='200x100-transparent.png')
+    with Drawing() as draw:
+        with Image(filename='template/social_template.png') as original:
+            with original.clone() as clone:
+                draw.font = 'template/strikefighter.ttf'
+                draw.font_size = 48
+                draw.stroke_width = 1
+                draw.stroke_color = Color('black')
+                draw.fill_color = Color('#f08728')
+                draw.text(40, 430, formattedMatchDate + ' @ ' + time + ' CST')
+                draw(clone)
+                clone.save(filename="output/wahoo.png")
+
     # Return image
 
 def appSetup():
