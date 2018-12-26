@@ -146,10 +146,28 @@ casters = {
     'madrak1': 'Madrak Ironhide, Thornwood Chieftain',
     'madrak2': 'Madrak Ironhide, World Ender',
     'madrak3': 'Madrak, Great Chieftain',
-    'ragnor1': 'Ragnor Skysplitter, the Runemaster'
+    'ragnor1': 'Ragnor Skysplitter, the Runemaster',
     ## Circle Orboros
     ## Legion of Everblight
     ## Skorne
+    'makeda1': 'Archdomina Makeda',
+    'xekaar1': 'Beast Master Xekaar',
+    'morghoul3': 'Dominar Morghoul & Escorts',
+    'rasheth1': 'Dominar Rasheth',
+    'hexeris2': 'Lord Arbiter Hexeris',
+    'morghoul2': 'Lord Assassin Morghoul',
+    'hexeris1': 'Lord Tyrant Hexeris',
+    'zaadesh2': 'Lord Tyrant Zaadesh',
+    'makeda3': 'Makeda & the Exhalted Court',
+    'naaresh1': 'Master Ascetic Naaresh',
+    'morghoul1': 'Master Tormentor Morghoul',
+    'jalaam1': 'Primus Jalaam',
+    'zaal1': 'Supreme Aptimus Zaal',
+    'makeda2': 'Supreme Archdomina Makeda',
+    'xerxis1': 'Tyrant Xerxis',
+    'mordikaar1': 'Void Seer Mordikaar',
+    'xerxis2': 'Xerxis, Fury of Halaak',
+    'zaal2': 'Zaal, the Ancestral Advocate'
     ## Grymkin
     ## Minions
 }
