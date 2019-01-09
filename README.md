@@ -14,4 +14,4 @@ A Python script that automates the creation of social images for Brutal Damage's
 # Usage
 `python main.py -c1 harkevich1 -c2 haley2 -d 10/13/2018 -t 6:00PM`
 
-The created graphics are saved into the `output/` folder.
+Created graphics are saved into the `output/` folder of this repository.
