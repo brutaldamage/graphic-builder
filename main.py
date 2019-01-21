@@ -77,14 +77,51 @@ def setup(date, time, casterone, castertwo):
                 socialFilename = 'output/social_' + casterone + '_' + castertwo + '.png'
                 bg.save(filename=socialFilename)
 
+    # Build YouTube image
+    with Drawing() as draw:
+        with Image(filename='template/youtube_template.png') as original:
+            with original.clone() as bg:
+                with Image(filename=f1) as casterOneImage:
+                    bg.composite(casterOneImage, left=150, top=375)
+                with Image(filename=f2) as casterTwoImage:
+                    bg.composite(casterTwoImage, left=825, top=375)
+                
+                draw.font = 'template/strikefighter.ttf'
+                draw.text_alignment = 'center'
+                draw.fill_color = Color('white')
+
+                formattedCasterOneText = formatCasterText(p1)
+                draw.font_size = formattedCasterOneText.fontSize
+                if (formattedCasterOneText.bottom == ''):
+                    draw.text(300, 325, formattedCasterOneText.top)
+                else:
+                    draw.text(300, 300, formattedCasterOneText.top)
+                    draw.text(300, 340, formattedCasterOneText.bottom)
+
+                formattedCasterTwoText = formatCasterText(p2)
+                draw.font_size = formattedCasterTwoText.fontSize
+                if (formattedCasterTwoText.bottom == ''):
+                    draw.text(975, 325, formattedCasterTwoText.top)
+                else:
+                    draw.text(975, 300, formattedCasterTwoText.top)
+                    draw.text(975, 340, formattedCasterTwoText.bottom)
+
+                with Image(filename='template/vs_text.png') as vsText:
+                    bg.composite(vsText, left=500, top=450)
+
+                draw(bg)
+                youtubeFilename = 'output/youtube_' + casterone + '_' + castertwo + '.png'
+                bg.save(filename=youtubeFilename)
+
+
 def appSetup():
     logging.basicConfig(format='[%(levelname)s] %(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
 
 def formatCasterText(caster):
     text = CasterText()
     l = len(caster)
-    
-    if (l > 32):
+
+    if (l > 28):
         text.fontSize = 30
 
     if (l <= 12):
@@ -112,7 +149,7 @@ def formatCasterText(caster):
 class CasterText:
     top = ''
     bottom = ''
-    fontSize = 40
+    fontSize = 34
 
 if __name__ == '__main__':
     setup()
