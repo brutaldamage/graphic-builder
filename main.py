@@ -39,9 +39,9 @@ def setup(date, time, casterone, castertwo):
                 f1 = 'template/casters/' + casterone + '.png'
                 f2 = 'template/casters/' + castertwo + '.png'
                 with Image(filename=f1) as casterOneImage:
-                    bg.composite(casterOneImage, left=85, top=625)
+                    bg.composite(casterOneImage, left=90, top=625)
                 with Image(filename=f2) as casterTwoImage:
-                    bg.composite(casterTwoImage, left=565, top=625)
+                    bg.composite(casterTwoImage, left=570, top=625)
 
                 draw.font = 'template/strikefighter.ttf'
                 draw.font_size = 48
@@ -57,18 +57,18 @@ def setup(date, time, casterone, castertwo):
                 formattedCasterOneText = formatCasterText(p1)
                 draw.font_size = formattedCasterOneText.fontSize
                 if (formattedCasterOneText.bottom == ''):
-                    draw.text(250, 585, formattedCasterOneText.top)
+                    draw.text(260, 585, formattedCasterOneText.top)
                 else:
-                    draw.text(250, 560, formattedCasterOneText.top)
-                    draw.text(250, 605, formattedCasterOneText.bottom)
+                    draw.text(260, 560, formattedCasterOneText.top)
+                    draw.text(260, 605, formattedCasterOneText.bottom)
 
                 formattedCasterTwoText = formatCasterText(p2)
                 draw.font_size = formattedCasterTwoText.fontSize
                 if (formattedCasterTwoText.bottom == ''):
-                    draw.text(720, 585, formattedCasterTwoText.top)
+                    draw.text(730, 585, formattedCasterTwoText.top)
                 else:
-                    draw.text(720, 560, formattedCasterTwoText.top)
-                    draw.text(720, 605, formattedCasterTwoText.bottom)
+                    draw.text(730, 560, formattedCasterTwoText.top)
+                    draw.text(730, 605, formattedCasterTwoText.bottom)
 
                 with Image(filename='template/vs_text.png') as vsText:
                     bg.composite(vsText, left=320, top=710)
