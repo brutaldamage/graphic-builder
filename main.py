@@ -121,8 +121,11 @@ def formatCasterText(caster):
     text = CasterText()
     l = len(caster)
 
-    if (l > 28):
+    if (l >= 28 and l <= 40):
         text.fontSize = 30
+
+    if (l > 40):
+        text.fontSize = 24
 
     if (l <= 12):
         text.top = caster
@@ -131,7 +134,7 @@ def formatCasterText(caster):
         words = caster.split()
         topCharCount = 0
         for x in words:
-            if (topCharCount <= 12):
+            if (topCharCount < 9):
                 if (len(text.top) == 0):
                     text.top = x
                 else:
