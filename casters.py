@@ -91,6 +91,7 @@ casters = {
     'vyros1': 'Dawnlord Vyros',
     'elara2': 'Elara, Death\'s Shadow',
     'garryth1': 'Garryth, the Blade of Retribution',
+    'garryth2': 'Garryth, Eye of Vengeance',
     'issyria1': 'Issyria, Sibyl of Dawn',
     'kaelyssa1': 'Kaelyssa, the Night\'s Whisper',
     'ossyan1': 'Lord Arcanist Ossyan',
