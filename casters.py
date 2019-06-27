@@ -39,9 +39,9 @@ casters = {
     'oldwitch1': 'The Old Witch of Khador',
     'butcher1': 'Orsus Zoktavir, the Butcher of Khardov',
     'irusk2': 'Supreme Kommandant Irusk',
-    'vlad3': 'Vladimir Tzepesci, Great Prince of Umbrey',
-    'vlad2': 'Vladimir Tzepesci, the Dark Champion',
-    'vlad1': 'Vladimir Tzepesci, the Dark Prince',
+    'vladimir3': 'Vladimir Tzepesci, Great Prince of Umbrey',
+    'vladimir2': 'Vladimir Tzepesci, the Dark Champion',
+    'vladimir1': 'Vladimir Tzepesci, the Dark Prince',
     'oldwitch2': 'Zevanna Agha, the Fate Keeper',
     ## Protectorate of Menoth
     'durst1': 'Anson Durst, Rock of the Faith',
