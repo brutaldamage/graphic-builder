@@ -129,6 +129,10 @@ casters = {
     'crosse2': 'Lieutenant Crosse, Resistance Fighter',
     'magnus1': 'Magnus the Traitor',
     'magnus2': 'Magnus the Warlord',
+    ## Infernals
+    'agathon1': 'Agathon, the Voice in the Darkness',
+    'omodamos1': 'Omodamos, the Black Gate',
+    'zaateroth1': 'Zaateroth, the Weaver of Shadows',
     ## Trollbloods
     'borka1': 'Borka Kegslayer',
     'borka2': 'Borka, Vengance of the Rimeshaws',
@@ -213,11 +217,13 @@ casters = {
     'wanderer1': 'The Wanderer',
     'oldwitch3': 'Zevanna Agha, the Fate Keeper',
     ## Minions
+    'azazello1': 'Lord Azazello, the Castellan',
     'barnabas2': 'Barnabas, Lord of Blood',
     'barnabas1': 'Bloody Barnabas',
     'calaban1': 'Calaban, the Grave Walker',
     'arkadius1': 'Dr. Arkadius',
     'helga1': 'Helga the Conquerer',
+    'helga2': 'Helga on Wheels',
     'jagajaga1': 'Jaga-Jaga, the Death Charmer',
     'carver1': 'Lord Carver, BMMD, Esq. III',
     'maelok1': 'Maelok the Dreadbound',
